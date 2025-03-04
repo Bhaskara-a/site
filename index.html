@@ -12,8 +12,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
   </head>
-  <body class="bg-gray-100 flex flex-col items-center h-screen">
-    <div class="absolute  inset-0 bg-cover bg-center" style="background-image: url('public/background.gif')"></div>
+  <body class="bg-gray-100 flex flex-col items-center justify-center h-100 overflow-y-auto py-4">
+    <div class="fixed  inset-0 bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('public/background.gif'); z-index: -1;"></div>
 
     <header class="bg-black/50 backdrop-blur-sm text-gray-200 py-3 w-fit h-fit mx-auto rounded-lg mt-4">
       <nav class="container mx-auto px-4 flex items-center justify-between">
@@ -34,13 +34,12 @@
       </nav>
     </header>
 
-    <div class="z-10 mt-10 flex items-start gap-4">
-        <iframe src="https://player.twitch.tv/?channel=bhaaskara&parent=bhaskara.com.br" frameborder="0" allowfullscreen="true" scrolling="no" height="720" width="1280"></iframe>
+    <div class="z-10 mt-10 flex flex-col flex-wrap items-start justify-center gap-4 h-full lg:flex-row overflow-y-auto">
+        <iframe class="w-full aspect-video 2xl:w-[1280px] 2xl:h-[720px] bg-black/50 backdrop-blur-sm rounded-lg" src="https://player.twitch.tv/?channel=bhaaskara&parent=bhaskara.com.br" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
         <iframe
+        class="w-full h-[500px] 2xl:w-[350px] 2xl:h-[720px] bg-black/50 backdrop-blur-sm rounded-lg"
         id="chat_embed"
-        src="https://www.twitch.tv/embed/bhaaskara/chat?parent=bhaskara.com.br"
-        height="720"
-        width="350"></iframe>
+        src="https://www.twitch.tv/embed/bhaaskara/chat?parent=bhaskara.com.br"></iframe>
     </div>
   </body>
 </html>
