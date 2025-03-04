@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página com Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-gray-100 flex flex-col items-center h-screen">
+    <div class="absolute  inset-0 bg-cover bg-center" style="background-image: url('public/background.gif')"></div>
+
+    <header class="bg-black/50 backdrop-blur-sm text-gray-200 py-3 w-fit h-fit mx-auto rounded-lg mt-4">
+      <nav class="container mx-auto px-4 flex items-center justify-between">
+        <div class="space-x-10">
+          <a href="https://instagram.com" target="_blank" class="hover:text-gray-500">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" class="hover:text-gray-500">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://tiktok.com" target="_blank" class="hover:text-gray-500">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank" class="hover:text-gray-500">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="z-10 mt-10 flex items-start gap-4">
+        <iframe src="https://player.twitch.tv/?channel=bhaaskara&parent=www.bhaskara.com.br" frameborder="0" allowfullscreen="true" scrolling="no" height="720" width="1280"></iframe>
+        <iframe
+        id="chat_embed"
+        src="https://www.twitch.tv/embed/bhaaskara/chat?parent=www.bhaskara.com.br"
+        height="720"
+        width="350"></iframe>
+    </div>
+  </body>
+</html>
